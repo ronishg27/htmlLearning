@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table in HTML</title>
+    <style>
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            border: 2px solid rgb(215, 163, 94);
+            border-collapse: collapse;
+
+            
+        }
+        th,td{
+            border: 2px groove #05335d;
+            color: rgb(226, 49, 49);
+            padding: 5px;
+        }
+        th{
+            background-color: beige;
+        }
+        tr{
+            height: 21px
+        }
+       a{
+        color: yellow;
+        text-decoration: none;
+       }
+        a:visited{
+            color: green;
+        }
+        a:active{
+            color: red;
+        }
+        a:hover{
+           color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Horizontal Table</h3>
+        <table>
+            <tr>
+                <th>Emp_ID</th>
+                <th>Name</th>
+                <th>Contact</th>
+                <th colspan="2">Address</th>
+            </tr>
+            <tr>
+                <td>ff35</td>
+                <td>Harry</td>
+                <td>980765435</td>
+                <td>Kathmandu</td>
+                <td>Nepal</td>
+            </tr>
+            <tr>
+                <td>ff36</td>
+                <td>Ron</td>
+                <td>980765436</td>
+                <td>Kathmandu</td>
+                <td>Nepal</td>
+            </tr>
+            <tr>
+                <td>ff37</td>
+                <td>Hermione</td>
+                <td>980765437</td>
+                <td>Kathmandu</td>  
+                <td>Nepal</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <h3>Vertical Table</h3>
+        <table>
+            <tr>
+                <th>Emp_ID</th>
+                <td>ff35</td>
+                <td>ff36</td>
+                <td>ff37</td>
+            </tr>
+            <tr>
+                <th>Name</th>
+                <td>Harry</td>
+                <td>Ron</td>
+                <td>Hermione</td>
+            </tr> 
+            <tr>
+                <th>Contact</th>
+                <td>980765435</td>
+                <td>980765436</td>
+                <td>980765437</td>
+            </tr> 
+            <tr>
+                <th rowspan="2">Address</th>
+                <td>Nepal</td>
+                <td>Nepal</td>
+                <td>Nepal</td>
+            </tr>
+            <tr> 
+                
+                <td>Kathmandu</td>
+                <td>Kathmandu</td>
+                <td>Kathmandu</td>
+            </tr>
+        </table>
+   
+</div>
+<a href="mailto:samriddhicollege@gmail.com" target="_blank">Heyy! Click Me. I'm so excited.</a> <br>
+<a href="#">Heyy! Click Me. I'm so excited.</a>
+</body>
+</html>

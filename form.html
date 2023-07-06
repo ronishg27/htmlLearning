@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .container {
+            /* text-align: center; */
+            margin-left: 50px;
+        }
+
+        div {
+            margin-bottom: 02px;
+        }
+
+        label {
+            font-weight: bold;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login Page</h1>
+        <form action="">
+            <label for="fname">UserName:</label>
+            <input type="text" name="Usernamegender" placeholder="Enter Your Name" id="fname"> <br>
+
+            <label for="pw">Password:</label>
+            <input type="password" name="password" id="pw"> <br>
+            <label for="phone">Phone Number:</label>
+            <input type="number" name="phone" id="phone" min="9000000000" max="9999999999"><br>
+            <label for="email">Email:</label>
+            <input type="email" name="userEmail" id="userEmail"><br> 
+            <label for="Gender">Gender:</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="others" value="others">
+            <label for="others">Others</label> <br>
+            <label for="myFile">Select a file:</label>
+            <input type="file" name="myFile" id="myFile">
+            <br>
+            <label for="car">Choose a car:</label>
+            <select name="car" id="">
+                <option value="BMW">BMW</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="audi">Audi</option>
+            </select> <br>
+            <textarea name="message" id="mw" cols="30" rows="10" placeholder="enter message to our admin panel"></textarea>
+          <br> <input type="submit" name="submit" id="submit"> <br>
+        </form>
+    </div>
+</body>
+
+</html>
