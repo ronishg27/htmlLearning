@@ -12,7 +12,7 @@
         }
 
         .header {
-            background-color: #000;
+            background-color: #ffffff;
             padding: 15px;
         }
 
@@ -20,20 +20,20 @@
             overflow: auto;
         }
 
-        #div1 {
+        .div1 {
             width: 20%;
             float: left;
-
+            overflow: hidden;
         }
 
-        #div2 {
+        .div2 {
             width: 60%;
             overflow: hidden;
             float: left;
             padding: 0 20px;
         }
 
-        #div3 {
+        .div3 {
             width: 20%;
             background-color: lightblue;
             float: left;
@@ -45,6 +45,7 @@
         .menuItem {
             overflow: auto;
             padding: 8px;
+            margin-left: 5px;
             margin-top: 7px;
             border-bottom: 1px solid grey;
         }
@@ -57,19 +58,45 @@
             margin-top: 7px;
             font-size: 12px;
         }
+
+        /* media query in CSS targets tablet with a width of 800px*/
+        @media only screen and (max-width: 800px) {
+
+            .div2 {
+                width: 80%;
+                padding: 0;
+            }
+
+            .div3 {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+
+            .div3,
+            .div1,
+            .div2 {
+                width: 100%;
+            }
+
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div id="div1">
-            <ul>
-                <li class="menuItem">Home</li>
-                <li class="menuItem">About us</li>
-                <li class="menuItem">Contact Us </li>
-            </ul>
+        <div class="header">
+            <h2>Dashboard</h2>
         </div>
-        <div id="div2">
+        <div class="div1">
+            <div class="menuItem">Home</div>
+            <div class="menuItem">About us</div>
+            <div class="menuItem">Contact Us </div>
+
+        </div>
+        <div class="div2">
+
             <h2>Brief Introduction</h2>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor nobis expedita molestiae, enim recusandae
             mollitia consectetur distinctio, in ullam eaque qui, autem labore ex explicabo odio ab. Sequi, nisi quod?
@@ -81,7 +108,7 @@
                 alt="Mountain picture">
         </div>
 
-        <div id="div3">
+        <div class="div3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet corrupti nulla beatae non deleniti
             suscipit ex rem alias qui ad repellat quam, maxime commodi omnis veritatis autem nostrum cupiditate.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur at iure odio provident ad, eos, sed
@@ -94,7 +121,7 @@
 
     </div>
     <div class="footer">
-        <marquee scrollamount="10">Hello, I am under the water.</marquee>
+        <marquee scrollamount="10">Hello, I am under the water. Please help me. Here too much raining.</marquee>
     </div>
 </body>
 
