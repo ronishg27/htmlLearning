@@ -1,3 +1,24 @@
-body{
-  background-color: #a29edf;   
+
+.header{
+    background-color: yellow;
+    border-radius: 5px;
+    opacity: 1;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    border-style: dotted dashed solid double;
 }
+.box{
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    text-transform:capitalize ;
+    /* text-decoration-line:overline; */
+    text-decoration: double;
+    text-indent: 40px;
+    font-family: 'Pangolin', serif;
+    /* for line spacing */
+    line-height: 0.8;
+}
+
