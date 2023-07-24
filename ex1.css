@@ -1,0 +1,33 @@
+@keyframes blink {
+    0% { opacity: 0; }
+    25% { opacity: 0.5; }
+    50% { opacity: 1; }
+    75% { opacity: 0.5; }
+    100% { opacity: 0; }
+  }
+  
+  body{
+background-color: #92767617;
+  }
+.h {
+    color: white;
+    width: 640px;
+    height: 360px;
+    background-color: antiquewhite;
+    margin: auto;
+    background-image: url('./src/tree.jpg');
+    background-size: cover;
+    text-align: center;
+}
+.hh{
+    background-color: black;
+    height: 100px;
+padding: 3px;
+}
+.blink{
+    padding: 120px;
+    animation: blink 1s infinite; 
+}
+.hdng1{
+    color: rgba(35, 25, 25);
+}
