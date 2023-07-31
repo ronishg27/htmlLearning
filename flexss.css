@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+}
+.flex-container {
+  margin: auto;
+  display: flex;
+  background: rgb(4,252,145);
+  background: radial-gradient(circle, rgba(4,252,145,1) 0%, rgba(200,0,255,1) 100%);
+  flex-direction: column;
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.inner-container {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  border: 2px solid white;
+}
+#fi{
+    background-color: rgb(193, 124, 19);
+}
+#se{
+    background-color: rgb(84, 2, 237);
+}
+#th{
+    background-color: rgb(133, 35, 179);
+}

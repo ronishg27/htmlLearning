@@ -14,10 +14,14 @@ background-color: #92767617;
   }
 .h {
     color: white;
-    width: 640px;
-    height: 360px;
+    width: 50%;
+    height: auto;
     background-color: antiquewhite;
     margin: auto;
+
+    
+}
+.h11{
     background-image: url('https://source.unsplash.com/random/?nepal-tourism&5');
     background-size: cover;
     text-align: center;
@@ -120,7 +124,32 @@ li.dropdown{
     background-color: green;
 }
 
-
+/* 
 [loading="eager"]{
     shadow
+} */
+
+.footerContainer{
+    width: 50%;
+    margin: auto;
+    color: white;
+
+}
+.about{
+    width:60%;
+    float: left;
+    background-color: black !important;
+
+}
+.contact-info{
+    width: 30%;
+    float: left;
+    background-color: black !important;
+
+}
+.blankk{
+    float: left;
+    width: 10%;
+    background-color: black !important;
+
 }
