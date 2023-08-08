@@ -3,8 +3,8 @@
   padding: 0;
 }
 
-body{
-    background-color:beige;
+body {
+  background-color: beige;
 }
 .nav-bar {
   display: flex;
@@ -12,8 +12,8 @@ body{
   background-color: teal;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border-bottom-left-radius:10px;
-  border-bottom-right-radius:10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .nav-bar ul {
@@ -42,9 +42,9 @@ body{
 
 .container {
   max-width: 1224px;
-  width: 90%;
+  width: 55%;
   margin: auto;
-  padding: 20px 20px 0;  
+  padding: 20px 20px 0;
 }
 
 .title {
@@ -80,4 +80,3 @@ body{
     flex-direction: column;
   }
 }
-
