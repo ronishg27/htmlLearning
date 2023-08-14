@@ -3,6 +3,27 @@
   padding: 0;
 }
 
+/* for scroll bar (doesnot support)*/
+/* html {
+  scrollbar-width: normal; 
+  scrollbar-color: red green;
+} */
+
+/* for chrome and other browsers (won't support in firefox */
+
+html::-webkit-scrollbar {
+  width: 2vw;
+  height: 5%;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #dfe29a;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #e4e4b2;
+}
+
 body {
   background-color: beige;
 }
@@ -69,10 +90,21 @@ body {
   gap: 20px;
 }
 
+.photo {
+  overflow: hidden;
+}
+
 .photo img {
   width: 100%;
   border-radius: 5px;
   height: 100%;
+  transform: scale(1); /* Initial state */
+  transition: transform ease 300ms;
+}
+
+.photo img:hover {
+  transform: scale(1.2);
+  transition: all ease 542ms;
 }
 
 @media (max-width: 768px) {
