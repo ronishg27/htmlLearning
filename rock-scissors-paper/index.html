@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Your Choice:</h3>
+    <!-- <div id="resPlayer" class="res"></div> -->
+    <select name="playerChoice" id="Player">
+        <option value="Scissors">Scissors</option>
+        <option value="Paper">Paper</option>
+        <option value="Rock">Rock</option>
+    </select>
+    <h3>Bot's Choice</h3>
+    <div id="resBot" class="res"></div>
+    <h3>Winner:</h3>
+    <div class="res" id="winner"></div>
+    <button id="play" onclick="guess()">Click to play</button>
+    <script src="./script.js"></script>
+</body>
+
+</html>
