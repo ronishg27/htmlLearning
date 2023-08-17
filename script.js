@@ -48,3 +48,18 @@ function getBooking() {
   // document.querySelector("#another").innerHTML += booking.booking1;
   document.querySelector("#another").innerHTML = JSON.stringify(booking);
 }
+
+function operatorExamples() {
+  // let x = "A";
+  // let y = "a";
+  let x = "20";
+  let y = "5";
+  document.querySelector(".operator").innerHTML = x < y;
+  let age = null;
+
+  //nullish coalesce operator
+  let isOld = age ?? "younger";  //checks for null value
+  console.log(isOld);
+}
+
+operatorExamples();
