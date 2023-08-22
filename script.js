@@ -58,8 +58,72 @@ function operatorExamples() {
   let age = null;
 
   //nullish coalesce operator
-  let isOld = age ?? "younger";  //checks for null value
+  let isOld = age ?? "younger"; //checks for null value
   console.log(isOld);
 }
 
-operatorExamples();
+// operatorExamples();
+
+// iife -> imediately invoke function expression
+
+let fun = (function () {
+  let privateValue = 5; // private value cant be accessed directly
+  // console.log(b);
+  return {
+    getter: function () {
+      console.log(privateValue); // fun.getter()
+    },
+    setter: function (val) {
+      privateValue = val; // fun.setter(66)
+    },
+  };
+})();
+
+//prototype
+let person = {
+  name: "Tom", // go to browser console and type 'person.' and you'll see various properties not created by you, that is called prototype
+};
+
+// console.log(person.hasOwnProperty("name"));
+// returns true
+
+//more examples
+// let ar = [1, 2, 3, 4, 5];
+// console.log(ar.length); //here .length is alse a prototype. similarly there are lots of prototype
+
+//inheritance
+
+let tomObject = {
+  age: 20,
+  course: "CS",
+};
+tomObject.__proto__ = person;
+// console.log(tomObject);
+
+//this in eventlistener gives the tag that is to be listened
+
+//call apply bind method
+
+function abc(v1 = 3, v2 = 4) {
+  //for default values
+  console.log(this);
+  console.log(v1, v2);
+}
+
+var ob = { age: 3 };
+
+// abc();
+// abc.call(ob, 1, 2); // passing arguments
+// abc.apply(ob, [1, 2]); //array for the arguments
+// let bindedFunction = abc.bind(ob); //just bind the function with an object and return another function which is binded with that object
+// bindedFunction(6, 5); //and can be called later
+
+// pure and impure functions
+// pure functions are those functions which returns same result everytime when called with same arguments and doesn't change the value of global variables.
+// rest are impure functions
+
+console.log("hey"); 
+setTimeout(function(){
+  console.log("after 5sec")
+},5000);
+console.log("bye");
