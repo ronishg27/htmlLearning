@@ -122,8 +122,21 @@ var ob = { age: 3 };
 // pure functions are those functions which returns same result everytime when called with same arguments and doesn't change the value of global variables.
 // rest are impure functions
 
-console.log("hey"); 
-setTimeout(function(){
-  console.log("after 5sec")
-},5000);
-console.log("bye");
+// console.log("hey");
+// setTimeout(function () {
+//   console.log("after 5sec");
+// }, 5000);
+// console.log("bye");
+
+let str = 'Hello "world"';
+let str2 = "Hello world";
+
+console.log(str);
+console.log(str2.length);
+console.log(str2.slice(2, str2.length));
+console.log(str2.substring(2,5));
+console.log(str2.substr(2,5));
+
+
+
+
