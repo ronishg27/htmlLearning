@@ -128,15 +128,23 @@ var ob = { age: 3 };
 // }, 5000);
 // console.log("bye");
 
-let str = 'Hello "world"';
+// let str = "Hello \"world\"";
 let str2 = "Hello world";
 
-console.log(str);
-console.log(str2.length);
-console.log(str2.slice(2, str2.length));
-console.log(str2.substring(2,5));
-console.log(str2.substr(2,5));
+// console.log(str);
+// console.log(str2.length); // 11
+// console.log(str2.slice(2, str2.length)); //llo world
+// console.log(str2.slice(2, -1));  // llo worl
+// console.log(str2.substring(2, 5)); //llo
+// console.log(str2.substr(2, 5));  //llo w
+// console.log(str2.split(" ")); // ["hello", "world"]
 
+// let str3 = "Hello \"world\"";
+// console.log(str3.slice(4,7));
+let str4 = "0abcdef  ghi abc";
+console.log(str4.replace("abc", "cdc"));
+console.log(str4.replace(/abc/g, "cdc"));
+console.log(str4.replaceAll("abc", "cdc"));
 
-
-
+console.log(str4.split(/\s+/));
+console.log(str4.split(" "));

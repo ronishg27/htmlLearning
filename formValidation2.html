@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="formVal2.css">
+    <title>Form Validation</title>
+</head>
+
+<body style="font-family: Matter;">
+    <div class="main">
+        <h3>Please fill out this form:</h3>
+        <form method="get" id="myForm">
+            <div class="input-group">
+                <span class="input-group-text wi">First and last name</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text wi">Your Email</span>
+                <input type="text" class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text wi">Address</span>
+                <input type="text" class="form-control">
+            </div>
+            <div class="input-group">
+                <span class="input-group-text wi">Select your gender</span>
+                <div class="mt-2">
+                    <input class="form-check-input ms-5" type="radio" name="gender" id="GenderMale">
+                    <label class="form-check-label ms-2" for="GenderMale">Male</label>
+                    <input class="form-check-input ms-5" type="radio" name="gender" id="genderFemale">
+                    <label class="form-check-label ms-2" for="genderFemale">Female</label>
+                    <input class="form-check-input ms-5" type="radio" name="gender" id="genderOther">
+                    <label class="form-check-label ms-2" for="genderOther">Non-binary</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label class="input-group-text wi" for="inputGroupSelect01">Select Course</label>
+                <select class="form-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="csit">B.Sc CSIT</option>
+                    <option value="bca">BCA</option>
+                    <option value="bbs">BBS</option>
+                    <option value="bsw">BSW</option>
+                </select>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <span class="input-group-text wi">Please accept the terms</span>
+                <div>
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-secondary wi2" for="btncheck1">
+                        I will not use my mobile phone during the class.
+                    </label>
+                    <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-secondary wi2" for="btncheck2">
+                        I will do my assignments regularly.
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-outline-secondary" type="submit">Submit form</button>
+                <button class="btn btn-outline-secondary" type="reset">Reset form</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="formVal2.js"></script>
+    
+</body>
+
+</html>

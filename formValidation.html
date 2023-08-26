@@ -1,0 +1,96 @@
+<!-- name
+email
+mbl no
+address
+radio button gender
+courses dropdown
+checkboxes for t&c term 1 and 2
+submit reset
+
+wrap in table  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidation</title>
+    <link rel="stylesheet" href="formVal.css">
+</head>
+
+<body>
+    <div id="main">
+        <table>
+            <form action="">
+                <h3>Please fillout this form.</h3>
+                <tr>
+                    <td>
+                        <label for="Name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="Name" id="nameInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="emailInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="address" id="addressInput">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:</label>
+                    </td>
+
+                    <td>
+                        <input type="radio" name="gender" id="genderInput">
+                        <label for="genderMale">Male</label>
+                        <input type="radio" name="gender" id="genderInput">
+                        <label for="genderfemale">Female</label>
+                        <input type="radio" name="gender" id="genderInput">
+                        <label for="genderOther">Non-binary</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="course">Select Course:</label></td>
+                    <td>
+                        <select name="course" id="courseInput">
+                            <option value="Bsc_CSIT">B.Sc. CSIT</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BBS">BBS</option>
+                            <option value="BBS">BBS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="terms">Please accept the terms:</label></td>
+                    <td><input type="checkbox" name="terms" id=""> Term 1</td>
+                <tr>
+                </tr>
+                <td></td>
+                <td><input type="checkbox" name="terms" id=""> Term 2</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td id="btnField">
+                        <button>Submit</button>
+                        <button onclick="resetForm">Reset</button>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+
+</html>
