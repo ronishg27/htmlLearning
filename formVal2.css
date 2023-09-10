@@ -1,5 +1,5 @@
 .main {
-  width: 50vw;  
+  width: 50vw;
   margin: 10 0 0 20 !important;
 }
 .wi {
@@ -10,3 +10,9 @@
 .wi2 {
   width: 35vw;
 }
+
+#formData {
+  background-color: blanchedalmond;
+  font-family:  cursive, "Narnoor", "Noto Serif Makasar", serif;
+}
+

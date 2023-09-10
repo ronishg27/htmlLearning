@@ -20,16 +20,18 @@ function submit(e) {
       ? "No course selected"
       : selectedCourseInput;
 
+  // let cin = document.querySelector("#courseOption");
+  // let ci = cin.options[cin.selectedIndex].text; //works well
+  //reading terms value
   const termsArray = [
     "I will not use my mobile phone during the class.",
     "I will do my assignments regularly.",
   ];
-  let terms = document.querySelectorAll('input[name="terms"]:checked');
+  let terms = document.querySelectorAll('input[name="terms"]');
   let selectedTermsValues = [];
   terms.forEach(function (term) {
     if (term.checked) selectedTermsValues.push(term.value);
   });
-  console.log(selectedTermsValues);
 
   document.querySelector("#formData").innerHTML = "Name: " + name + "<br>";
   document.querySelector("#formData").innerHTML += "Email: " + email + "<br>";
@@ -42,10 +44,9 @@ function submit(e) {
   if (!selectedTermsValues.length) {
     document.querySelector("#formData").innerHTML += "No terms accepted<br>";
   } else {
-    document.querySelector("#formData").innerHTML += "Terms Accepted:<br>";
-    terms.forEach(function (i) {
-      document.querySelector("#formData").innerHTML += termsArray[+i] + "<br>";
-      console.log(termsArray[+i]);
+    document.querySelector("#formData").innerHTML += "Terms Accepted:";
+    selectedTermsValues.forEach(function (i) {
+      document.querySelector("#formData").innerHTML += termsArray[i] + "<br>";
     });
   }
 }
