@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        body>h3 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <H3 class="animate__animated animate__backInDown" id="animation">Hi, trying to animate</H3>
+    <button>Click to animate</button>
+    <script>
+        const btn = document.querySelector("button");
+        btn.addEventListener("click", () => {
+            document.querySelector("#animation").classList.add("animate__flipInX");
+        })
+        /* function animate() {
+             const elm = document.createElement("h3").innerHTML = "Hello, trying to animate again...";
+             elm.classList.add
+             
+         }*/
+    </script>
+</body>
+
+</html>
